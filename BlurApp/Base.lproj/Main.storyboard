@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Login View Controller" id="BYZ-38-t0r" customClass="ViewController" customModule="BlurApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1kQ-8b-Yqb">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFO-91-rqi" userLabel="Login View">
+                                <rect key="frame" x="26" y="110" width="376" height="454"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Qem-9x-nLh">
+                                        <rect key="frame" x="29.333333333333343" y="255.66666666666671" width="317.33333333333326" height="41.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="JFh-1w-1DG">
+                                        <rect key="frame" x="29.333333333333343" y="304.33333333333331" width="317.33333333333326" height="41.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spotify" translatesAutoresizingMaskIntoConstraints="NO" id="wDT-b1-mTR">
+                                        <rect key="frame" x="64" y="12" width="248" height="160.33333333333334"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to Spotify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4V8-lV-fol">
+                                        <rect key="frame" x="89.666666666666686" y="177" width="197" height="49.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="197" id="3fp-Ni-G2y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D32-wT-6Cg">
+                                        <rect key="frame" x="136" y="358.66666666666669" width="104" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="22"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="wDT-b1-mTR" firstAttribute="top" secondItem="VFO-91-rqi" secondAttribute="top" constant="12" id="Gu2-Nz-eLz"/>
+                                    <constraint firstItem="4V8-lV-fol" firstAttribute="height" secondItem="VFO-91-rqi" secondAttribute="height" multiplier="0.108871" id="KW2-fm-6qS"/>
+                                    <constraint firstItem="Qem-9x-nLh" firstAttribute="top" secondItem="4V8-lV-fol" secondAttribute="bottom" constant="29.329999999999998" id="QIJ-dB-oAH"/>
+                                    <constraint firstItem="Qem-9x-nLh" firstAttribute="centerX" secondItem="VFO-91-rqi" secondAttribute="centerX" id="Ueh-Yh-SUA"/>
+                                    <constraint firstItem="JFh-1w-1DG" firstAttribute="top" secondItem="Qem-9x-nLh" secondAttribute="bottom" constant="7.3300000000000001" id="W5K-bK-66s"/>
+                                    <constraint firstItem="Qem-9x-nLh" firstAttribute="height" secondItem="VFO-91-rqi" secondAttribute="height" multiplier="0.1" constant="-4.0666666666666629" id="Wgo-ZX-pmK"/>
+                                    <constraint firstItem="JFh-1w-1DG" firstAttribute="height" secondItem="VFO-91-rqi" secondAttribute="height" multiplier="0.1" constant="-4.0666666666666913" id="WuX-FO-XYE"/>
+                                    <constraint firstItem="D32-wT-6Cg" firstAttribute="width" secondItem="VFO-91-rqi" secondAttribute="width" multiplier="0.276596" id="a0q-w2-nmm"/>
+                                    <constraint firstItem="wDT-b1-mTR" firstAttribute="height" secondItem="VFO-91-rqi" secondAttribute="height" multiplier="0.3875" constant="-15.591666666666669" id="bpj-MQ-B6X"/>
+                                    <constraint firstItem="Qem-9x-nLh" firstAttribute="width" secondItem="VFO-91-rqi" secondAttribute="width" multiplier="0.843407" id="dBI-uK-VkV"/>
+                                    <constraint firstItem="wDT-b1-mTR" firstAttribute="width" secondItem="VFO-91-rqi" secondAttribute="width" multiplier="0.659341" id="dIU-F3-sda"/>
+                                    <constraint firstItem="JFh-1w-1DG" firstAttribute="centerX" secondItem="VFO-91-rqi" secondAttribute="centerX" id="fI8-iR-rbp"/>
+                                    <constraint firstItem="JFh-1w-1DG" firstAttribute="width" secondItem="VFO-91-rqi" secondAttribute="width" multiplier="0.843407" id="guR-Xj-TbS"/>
+                                    <constraint firstItem="wDT-b1-mTR" firstAttribute="centerX" secondItem="VFO-91-rqi" secondAttribute="centerX" id="jle-cE-XIA"/>
+                                    <constraint firstItem="D32-wT-6Cg" firstAttribute="centerX" secondItem="VFO-91-rqi" secondAttribute="centerX" id="juN-C0-i9z"/>
+                                    <constraint firstItem="D32-wT-6Cg" firstAttribute="height" secondItem="VFO-91-rqi" secondAttribute="height" multiplier="0.120968" constant="-4.9193548387096868" id="k10-Wb-wP2"/>
+                                    <constraint firstItem="D32-wT-6Cg" firstAttribute="top" secondItem="JFh-1w-1DG" secondAttribute="bottom" constant="13" id="rxp-Gf-K0Y"/>
+                                    <constraint firstItem="4V8-lV-fol" firstAttribute="top" secondItem="wDT-b1-mTR" secondAttribute="bottom" constant="4.5" id="xKO-IV-kjr"/>
+                                    <constraint firstItem="4V8-lV-fol" firstAttribute="centerX" secondItem="VFO-91-rqi" secondAttribute="centerX" id="zyk-re-KlA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VFO-91-rqi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="0DW-HX-T6G"/>
+                            <constraint firstItem="1kQ-8b-Yqb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3z3-hZ-ynW"/>
+                            <constraint firstItem="VFO-91-rqi" firstAttribute="height" secondItem="1kQ-8b-Yqb" secondAttribute="height" multiplier="0.446429" constant="40.607142857142833" id="Pb1-PJ-gvF"/>
+                            <constraint firstItem="VFO-91-rqi" firstAttribute="width" secondItem="1kQ-8b-Yqb" secondAttribute="width" multiplier="0.879227" id="aVy-rb-iit"/>
+                            <constraint firstItem="1kQ-8b-Yqb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cLf-ai-kc7"/>
+                            <constraint firstItem="VFO-91-rqi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="feJ-cb-p3V"/>
+                            <constraint firstItem="1kQ-8b-Yqb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iUe-rJ-nke"/>
+                            <constraint firstAttribute="bottom" secondItem="1kQ-8b-Yqb" secondAttribute="bottom" id="wHR-Ka-yz3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="1kQ-8b-Yqb" id="eg5-wc-Re3"/>
+                        <outlet property="loginView" destination="VFO-91-rqi" id="SDR-TX-ad8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.22429906542056" y="75.161987041036724"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="spotify" width="512" height="512"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
